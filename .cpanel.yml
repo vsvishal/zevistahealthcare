@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/zevista1/repositories/zevistahealthcare
+    - /bin/cp pages $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
