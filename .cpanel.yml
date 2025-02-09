@@ -1,6 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/zevista1/public_html/
-    - /bin/cp pages $DEPLOYPATH
-    - /bin/cp assets $DEPLOYPATH
