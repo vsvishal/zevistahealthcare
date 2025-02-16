@@ -1,6 +1,7 @@
 let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
+let sliderTimer;
 
 function showSlides() {
   slides.forEach((slide, index) => {
@@ -15,7 +16,9 @@ function showSlides() {
 
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].classList.add("active");
-  setTimeout(showSlides, 3000); // Change slide every 3 seconds
+
+  clearTimeout(sliderTimer);
+  sliderTimer = setTimeout(showSlides, 3000);
 }
 
 function currentSlide(n) {
