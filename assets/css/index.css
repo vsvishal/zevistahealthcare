@@ -86,7 +86,7 @@ main img {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(193, 186, 186, 0.5);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.3s;
@@ -94,5 +94,5 @@ main img {
 
 .active,
 .dot:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(229, 223, 223, 0.9);
 }
