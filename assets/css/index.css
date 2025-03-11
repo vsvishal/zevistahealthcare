@@ -98,3 +98,22 @@ main img {
 .dot:hover {
   background-color: rgba(229, 223, 223, 0.9);
 }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 40px;
+  background-color: #212121;
+  color: white;
+}
+
+.footer__label {
+  font-size: 16px;
+}
+
+.footer__ul {
+  list-style: none;
+  font-size: 14px;
+  padding-left: 1px;
+}
