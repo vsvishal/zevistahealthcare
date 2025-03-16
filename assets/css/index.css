@@ -21,6 +21,10 @@ body {
 
 .logo {
   font-size: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .nav-menu {
@@ -34,7 +38,7 @@ body {
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 85px;
+    top: 70px;
     left: 0;
     background-color: white;
     padding: 5px 0;
@@ -58,6 +62,11 @@ body {
 .logo__image {
   width: 14rem;
   height: 7rem;
+
+  @media (max-width: 768px) {
+    width: 10rem;
+    height: 5rem;
+  }
 }
 
 .menu-toggle {
@@ -133,16 +142,28 @@ footer {
   padding: 40px;
   background-color: #212121;
   color: white;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 }
 
 .footer__label {
   font-size: 16px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .footer__ul {
   list-style: none;
   font-size: 14px;
-  padding-left: 1px;
+  padding-left: 0px;
+
+  @media (max-width: 768px) {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -152,5 +173,16 @@ footer {
 
   .nav-menu li {
     padding: 5px 0;
+  }
+
+  .footer__ul li {
+    max-width: 100px;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  .nav-menu li:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease-in-out;
   }
 }
