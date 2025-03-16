@@ -1,6 +1,8 @@
 let slideIndex = 0;
 const slides = document.querySelectorAll(".slider--slide");
 const dots = document.querySelectorAll(".dot");
+const toggleMenu = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-menu");
 let sliderTimer;
 
 function showSlides() {
@@ -25,6 +27,14 @@ function currentSlide(n) {
   slideIndex = n - 1;
   showSlides();
 }
+
+toggleMenu.addEventListener("click", () => {
+  if (navMenu.classList.contains("open-menu")) {
+    navMenu.classList.remove("open-menu");
+  } else {
+    navMenu.classList.add("open-menu");
+  }
+});
 
 // Initialize slider
 showSlides();

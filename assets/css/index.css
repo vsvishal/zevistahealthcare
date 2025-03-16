@@ -11,19 +11,37 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
 }
+
 .logo {
   font-size: 24px;
 }
+
 .nav-menu {
   list-style: none;
   display: flex;
   gap: 20px;
+  z-index: 10;
+
+  @media (max-width: 768px) {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    background-color: white;
+    padding: 5px 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    transition: transform 0.3s ease-in-out;
+  }
 }
 
 .nav-menu a {
@@ -32,6 +50,7 @@ body {
   font-size: 16px;
   transition: color 0.3s;
 }
+
 .nav-menu a:hover {
   color: #7a7676;
 }
@@ -39,6 +58,19 @@ body {
 .logo__image {
   width: 14rem;
   height: 7rem;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
 
 main img {
@@ -111,4 +143,14 @@ footer {
   list-style: none;
   font-size: 14px;
   padding-left: 1px;
+}
+
+@media (max-width: 768px) {
+  .nav-menu.open-menu {
+    display: flex;
+  }
+
+  .nav-menu li {
+    padding: 5px 0;
+  }
 }
