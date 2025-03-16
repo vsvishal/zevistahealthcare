@@ -1,5 +1,5 @@
 let slideIndex = 0;
-const slides = document.querySelectorAll(".slide");
+const slides = document.querySelectorAll(".slider--slide");
 const dots = document.querySelectorAll(".dot");
 let sliderTimer;
 
