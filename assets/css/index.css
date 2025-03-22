@@ -4,10 +4,12 @@ html {
 
 html,
 body {
-  height: 100%;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 img {
@@ -145,7 +147,7 @@ footer {
   padding: 40px;
   background-color: #212121;
   color: white;
-  flex-shrink: 0;
+  min-height: 60px;
 
   @media (max-width: 768px) {
     padding: 10px;
