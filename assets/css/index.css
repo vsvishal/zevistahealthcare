@@ -190,8 +190,6 @@ main img {
 }
 
 footer {
-  display: flex;
-  justify-content: space-between;
   padding: 40px;
   background-color: #212121;
   color: white;
@@ -200,6 +198,11 @@ footer {
   @media (max-width: 768px) {
     padding: 10px;
   }
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__label {
@@ -218,6 +221,33 @@ footer {
   @media (max-width: 768px) {
     font-size: 11px;
   }
+}
+
+.bottom-detail {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.copyright {
+  font-size: 1.2rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.linkedin-img {
+  margin-top: -8px;
 }
 
 @media (max-width: 768px) {
