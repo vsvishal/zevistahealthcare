@@ -91,6 +91,10 @@ main img {
   width: 100%;
   object-fit: fill;
   max-height: 600px;
+
+  @media (max-width: 768px) {
+    max-height: 650px;
+  }
 }
 
 .slider {
@@ -140,10 +144,45 @@ main img {
   background-color: rgba(229, 223, 223, 0.8);
 }
 
+.card-container {
+  margin: 20px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  @media (max-width: 768px) {
+    margin: 20px 10px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card > img {
+  min-height: 350px;
+
+  @media (max-width: 768px) {
+    min-height: 250px;
+  }
+}
+
+.card > h2 {
+  margin: 15px;
+  font-size: 1.8rem;
+}
+
+.card > p {
+  margin: 15px;
+  font-size: 1.4rem;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
   padding: 40px;
   background-color: #212121;
   color: white;
