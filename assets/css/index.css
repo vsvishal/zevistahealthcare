@@ -141,6 +141,7 @@ main img {
   @media (max-width: 768px) {
     height: 11px;
     width: 11px;
+    margin: 0 1px;
   }
 }
 
