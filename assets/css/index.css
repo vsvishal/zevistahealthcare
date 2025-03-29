@@ -21,7 +21,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 8px 20px;
 }
 
 .logo {
@@ -115,6 +115,7 @@ main img {
 
 .slider--slide img {
   width: 100%;
+  min-height: 650px;
   display: block;
   filter: brightness(90%);
 }
