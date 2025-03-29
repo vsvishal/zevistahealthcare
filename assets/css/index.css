@@ -43,7 +43,7 @@ img {
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: 0;
     background-color: white;
     padding: 5px 0;
@@ -65,12 +65,12 @@ img {
 }
 
 .logo__image {
-  width: 14rem;
-  height: 7rem;
+  width: 12rem;
+  height: 6rem;
 
   @media (max-width: 768px) {
-    width: 10rem;
-    height: 5rem;
+    width: 8rem;
+    height: 4rem;
   }
 }
 
