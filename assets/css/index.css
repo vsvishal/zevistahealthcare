@@ -120,7 +120,7 @@ main img {
   filter: brightness(90%);
 
   @media (max-width: 768px) {
-    min-height: 10rem;
+    min-height: 340px;
   }
 }
 
