@@ -137,6 +137,11 @@ main img {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.3s;
+
+  @media (max-width: 768px) {
+    height: 11px;
+    width: 11px;
+  }
 }
 
 .active,
