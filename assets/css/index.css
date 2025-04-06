@@ -46,10 +46,11 @@ img {
     top: 40px;
     left: 0;
     background-color: white;
-    padding: 5px 0;
+    padding: 10px 0px;
     text-align: center;
     border-top: 1px solid #ccc;
     transition: transform 0.3s ease-in-out;
+    gap: 5px;
   }
 }
 
@@ -58,6 +59,10 @@ img {
   color: black;
   font-size: 16px;
   transition: color 0.3s;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .nav-menu a:hover {
@@ -266,18 +271,9 @@ footer {
     display: flex;
   }
 
-  .nav-menu li {
-    padding: 5px 0;
-  }
-
   .footer__ul li {
     max-width: 100px;
     word-wrap: break-word;
     white-space: normal;
-  }
-
-  .nav-menu li:hover {
-    background-color: #e0e0e0;
-    transition: background-color 0.3s ease-in-out;
   }
 }
