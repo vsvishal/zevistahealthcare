@@ -235,16 +235,16 @@ footer {
   list-style: none;
   font-size: 16px;
   padding-left: 0px;
-  line-height: 30px;
+  line-height: 25px;
 
   @media (max-width: 768px) {
     font-size: 11px;
-    line-height: normal;
+    line-height: 16px;
   }
 
   @media (min-width: 750px) and (max-width: 850px) {
     font-size: 11px;
-    line-height: normal;
+    line-height: 16px;
   }
 }
 
@@ -288,9 +288,12 @@ footer {
     display: flex;
   }
 
-  .footer__ul li {
-    max-width: 100px;
-    word-wrap: break-word;
-    white-space: normal;
+  .footer-container > .footer:nth-child(1),
+  .footer-container > .footer:nth-child(2) {
+    width: 50%;
+  }
+
+  .footer-container > .footer:nth-child(3) {
+    width: 100%;
   }
 }
