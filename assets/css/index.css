@@ -210,9 +210,11 @@ footer {
   background-color: #212121;
   color: white;
   min-height: 60px;
+  letter-spacing: 1px;
 
   @media (max-width: 768px) {
     padding: 10px;
+    letter-spacing: normal;
   }
 }
 
@@ -222,7 +224,7 @@ footer {
 }
 
 .footer__label {
-  font-size: 16px;
+  font-size: 18px;
 
   @media (max-width: 768px) {
     font-size: 12px;
@@ -231,12 +233,22 @@ footer {
 
 .footer__ul {
   list-style: none;
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 0px;
+  line-height: 30px;
 
   @media (max-width: 768px) {
     font-size: 11px;
+    line-height: normal;
   }
+}
+
+.footer__ul li:hover {
+  color: #ffbf00;
+}
+
+.address li:hover {
+  color: inherit;
 }
 
 .bottom-detail {
@@ -249,7 +261,7 @@ footer {
 }
 
 .copyright {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .social-media {
