@@ -241,6 +241,11 @@ footer {
     font-size: 11px;
     line-height: normal;
   }
+
+  @media (min-width: 750px) and (max-width: 850px) {
+    font-size: 11px;
+    line-height: normal;
+  }
 }
 
 .footer__ul li:hover {
