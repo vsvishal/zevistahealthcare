@@ -92,10 +92,36 @@ img {
   }
 }
 
-main img {
+.hero-img-container {
+  position: relative;
+}
+
+.hero-img-container img {
+  display: block;
   width: 100%;
   object-fit: fill;
   max-height: 650px;
+}
+
+.text-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 25%;
+  left: 40%;
+  transform: translate(-50% -50%);
+  color: white;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5); /* optional for contrast */
+  padding: 10px;
+  border-radius: 5px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    left: 24%;
+    top: 20%;
+  }
 }
 
 /* .slider {
