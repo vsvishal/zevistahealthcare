@@ -213,6 +213,7 @@ img {
 
 .card > img {
   min-height: 350px;
+  width: 100%;
 
   @media (max-width: 768px) {
     min-height: 250px;
