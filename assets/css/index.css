@@ -194,12 +194,12 @@ img {
   width: 100%;
   grid-gap: 3rem;
 
-  margin-top: 1.5rem;
+  margin: 1.5rem;
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
-    margin-top: 0.5rem;
+    margin: 0.5rem;
   }
 }
 
