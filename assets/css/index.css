@@ -12,6 +12,10 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+main {
+  padding: 10px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -185,30 +189,32 @@ img {
 } */
 
 .card-container {
-  margin: 20px 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  grid-gap: 3rem;
+
+  margin-top: 1.5rem;
 
   @media (max-width: 768px) {
-    margin: 20px 10px;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    margin-top: 0.5rem;
   }
 }
 
 .card {
-  border-radius: 5px;
+  /* border-radius: 10px; */
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
   border: none;
   -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  transition: all 0.9s ease-in-out;
 }
 
 .card:hover {
-  transform: scale(0.97);
-  border: none;
+  transform: translateY(-10px);
 }
 
 .card > img {
@@ -228,6 +234,60 @@ img {
 .card > p {
   margin: 15px;
   font-size: 1.4rem;
+}
+
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  grid-gap: 3rem;
+  padding: 2rem 0;
+  margin-top: 1.5rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    margin-top: 0.5rem;
+  }
+}
+.card_data {
+  display: flex;
+  background: #8fb4da;
+  padding: 2rem;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  transition: all 0.9s ease-in-out;
+  border-radius: 10px;
+}
+.card_data:hover {
+  transform: translateY(-10px);
+}
+.card_data img {
+  border-radius: 05%;
+  width: 50%;
+  height: 100%;
+}
+.pro_content {
+  padding-left: 1rem;
+}
+.pro_content h2 {
+  font-size: 2.5rem;
+  color: #e74c3c;
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
+}
+.position {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.pro_content p {
+  font-size: 1.6rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+  }
 }
 
 footer {
