@@ -286,6 +286,7 @@ img {
 
 .pro_content {
   padding-left: 1rem;
+  margin: auto;
 }
 
 .pro_content h2 {
@@ -300,6 +301,7 @@ img {
 .position {
   margin-bottom: 1rem;
   position: relative;
+  font-weight: bold;
 }
 
 .pro_content p {
@@ -356,6 +358,11 @@ footer {
 .footer__ul li:hover {
   color: #7a7676;
   cursor: pointer;
+}
+
+.footer__ul a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .address li:hover {
