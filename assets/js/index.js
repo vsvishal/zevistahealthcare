@@ -36,5 +36,12 @@ toggleMenu.addEventListener("click", () => {
   }
 });
 
+// Close menu if click occurs outside of toggleMenu or navMenu
+document.addEventListener("click", (event) => {
+  if (!navMenu.contains(event.target) && !toggleMenu.contains(event.target)) {
+    navMenu.classList.remove("open-menu");
+  }
+});
+
 // Initialize slider
-showSlides();
+// showSlides();
